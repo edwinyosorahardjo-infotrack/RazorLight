@@ -15,25 +15,18 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="azaza.cshtml" />
-    <None Remove="go.cshtml" />
-    <None Remove="Views\Subfolder\A.cshtml" />
-    <None Remove="Views\Subfolder\B.cshtml" />
-    <None Remove="Views\Subfolder\C.cshtml" />
+    <Compile Remove="Views\**" />
+    <EmbeddedResource Remove="Views\**" />
+    <None Remove="Views\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include="Views\Subfolder\A.cshtml" />
-    <EmbeddedResource Include="Views\Subfolder\B.cshtml" />
-    <EmbeddedResource Include="Views\Subfolder\C.cshtml" />
+    <None Remove="azaza.cshtml" />
+    <None Remove="go.cshtml" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\..\src\RazorLight\RazorLight.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Views\Shared\" />
   </ItemGroup>
 
 </Project>
